@@ -1,7 +1,11 @@
-﻿using Microsoft.Owin;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(WebApi2ProjectTemplateCompare.Startup))]
+[assembly: OwinStartup(typeof(WebApi2ProjectTemplateCompare.Startup))]
+
 namespace WebApi2ProjectTemplateCompare
 {
     public partial class Startup
